@@ -1,0 +1,14 @@
+Body
+Header
+	Logo - Nombre	
+Nav
+	Buscador MiPerfil Carrito
+	Categorías : Suplementos Alimentación Fresco Otros
+	
+	Ofertas diarias
+	Recetas
+	Productos por categorías, 3 filas
+Aside
+	
+Footer
+	RedesSociales Patrocinadores AtenciónAlCliente ... Naturitas
