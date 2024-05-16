@@ -23,7 +23,7 @@
     <div class="header row" style="align-items: center; justify-content: center; background-color: white;">
 
       <!-- Botón categorías oculto hasta md -->
-      <div class="boton navbar-light col-12 d-md-none d-flex m-3" style="justify-content: center;">
+      <div class="boton navbar-light col-2 d-md-none d-flex order-2" style="justify-content: center;">
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#categorias"
           aria-controls="categorias">
           <span class="navbar-toggler-icon"></span>
@@ -71,12 +71,14 @@
       </div>
 
       <!-- Imagen logo -->
-      <div class="logo col-2 p-0" style="min-width: 120px;">
+      <div class="logo col-2 p-0 order-0 order-md-2 text-center" style="min-width: 120px;">
         <img src="ref/logo.jfif" class="img-fluid" alt="logo">
       </div>
 
+      <div class="w-100 order-1"></div>
+
       <!-- Barra de búsqueda -->
-      <div class="buscador col-8 col-lg-4">
+      <div class="buscador col-8 col-lg-4 order-3">
         <form action="" class="d-flex">
           <button class="btn btn-outline-dark" type="button">
             <i class="bi bi-search"></i>
@@ -86,7 +88,7 @@
       </div>
 
       <!-- Menú de perfil, pedidos, notificaciones y carrito -->
-      <div class="personal col-2" style="width: fit-content;">
+      <div class="personal col-2 order-4" style="width: fit-content;">
         <div class="row">
           <div class="perfil col d-flex" style="justify-content: center; align-items: center; flex-wrap: wrap;">
             <i class="bi bi-person w-100 text-center" style="font-size: x-large;"></i>
@@ -231,8 +233,30 @@
       </div>
     </div>
 
+    <!-- Marcas -->
     <h3 style="margin-top: 20px; margin-bottom: 20px;">Nuestras marcas</h3>
-    <div class="marcas row"></div>
+    <div class="marcas row d-flex flex-wrap gap-3" style="justify-content: center;">
+      <div class="col-2 text-center pt-4" style="background-color: #edf7f1; border-radius: 10px;">
+        <img src="ref/marca1s.png" class="figure-img img-fluid rounded-circle" style="width: 90px;">
+        <p class="fw-bold mt-3 mb-0">Naturitas Essentials</p>
+        <p>Suplementos y alimentación esenciales</p>
+      </div>
+      <div class="col-2 text-center pt-4" style="background-color: #f4e8c7; border-radius: 10px;">
+        <img src="ref/marca2s.png" class="figure-img img-fluid rounded-circle" style="width: 90px;">
+        <p class="fw-bold mt-3 mb-0">Zeutics</p>
+        <p>Suplementos formulados por expertos</p>
+      </div>
+      <div class="col-2 text-center pt-4" style="background-color: #e1dbe1; border-radius: 10px;">
+        <img src="ref/marca3s.png" class="figure-img img-fluid rounded-circle" style="width: 90px;">
+        <p class="fw-bold mt-3 mb-0">Zentrity</p>
+        <p>Productos para el bienestar emocional</p>
+      </div>
+      <div class="col-2 text-center pt-4" style="background-color: #f8ebed; border-radius: 10px;">
+        <img src="ref/marca4s.png" class="figure-img img-fluid rounded-circle" style="width: 90px;">
+        <p class="fw-bold mt-3 mb-0">Woments</p>
+        <p>Productos para la salud de la mujer</p>
+      </div>
+    </div>
 
     <!-- Categorías de productos -->
     <h3 style="margin-top: 20px; margin-bottom: 20px;" class="d-none d-md-block">Categorías</h3>
