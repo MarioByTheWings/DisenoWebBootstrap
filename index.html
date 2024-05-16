@@ -17,7 +17,8 @@
     <div class="enviogratis row text-center" style="background-color: hsl(144, 37%, 56%); color: white;">
       <span>Envío gratis a partir de 49€</span>
     </div>
-
+    
+    <!-- Botón categorías oculto hasta md -->
     <div class="header row" style="align-items: center; justify-content: center; background-color: white;">
       <div class="boton navbar-light col-1 offset-1 d-md-none">
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#categorias"
@@ -65,11 +66,13 @@
           </div>
         </div>
       </div>
-
-      <div class="logo col-2">
+      
+      <!-- Imagen logo -->
+      <div class="logo col-2 p-0">
         <img src="ref/logo.jfif" class="img-fluid" alt="logo">
       </div>
 
+      <!-- Barra de búsqueda -->
       <div class="buscador col-4">
         <form action="" class="d-flex">
           <button class="btn btn-outline-dark" type="button">
@@ -79,6 +82,7 @@
         </form>
       </div>
 
+      <!-- Menú de perfil, pedidos, notificaciones y carrito -->
       <div class="personal col-2" style="width: fit-content;">
         <div class="row">
           <div class="perfil col d-flex" style="justify-content: center; align-items: center; flex-wrap: wrap;">
@@ -105,8 +109,9 @@
       <span>¡SÓLO EN LA APP! -5% DTO. en tu primera compra. Cupón: APPLOVERS</span>
     </div>
 
+    <!-- Carrousel de anuncios -->
     <div id="carouselExampleIndicators" class="carrousel carousel slide row">
-      <div class="carousel-indicators">
+      <div class="carousel-indicators mx-0">
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
           aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
@@ -118,18 +123,28 @@
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="ref/carrousel1.jpg" class="d-block w-100" alt="..."
+          <img src="ref/carrousel1.jpg" class="d-none d-lg-block w-100" alt="..."
+            href="https://www.naturitas.es/woments?range=maternity">
+          <img src="ref/carrousel1s.jpg" class="d-block d-lg-none w-100" alt="..."
             href="https://www.naturitas.es/woments?range=maternity">
         </div>
         <div class="carousel-item">
-          <img src="ref/carrousel2.jpg" class="d-block w-100" alt="..."
-            href="https://www.naturitas.es/b/el-granero-integral?brand_category=complementos_y_suplementos">
+          <img src="ref/carrousel2.jpg" class="d-none d-lg-block w-100" alt="..."
+            href="https://www.naturitas.es/woments?range=maternity">
+          <img src="ref/carrousel2s.jpg" class="d-block d-lg-none w-100" alt="..."
+            href="https://www.naturitas.es/woments?range=maternity">
         </div>
         <div class="carousel-item">
-          <img src="ref/carrousel3.jpg" class="d-block w-100" alt="..." href="https://www.naturitas.es/b/natumi">
+          <img src="ref/carrousel3.jpg" class="d-none d-lg-block w-100" alt="..."
+            href="https://www.naturitas.es/woments?range=maternity">
+          <img src="ref/carrousel3s.jpg" class="d-block d-lg-none w-100" alt="..."
+            href="https://www.naturitas.es/woments?range=maternity">
         </div>
         <div class="carousel-item">
-          <img src="ref/carrousel4.jpg" class="d-block w-100" alt="..." href="https://www.naturitas.es/b/equisalud">
+          <img src="ref/carrousel4.jpg" class="d-none d-lg-block w-100" alt="..."
+            href="https://www.naturitas.es/woments?range=maternity">
+          <img src="ref/carrousel4s.jpg" class="d-block d-lg-none w-100" alt="..."
+            href="https://www.naturitas.es/woments?range=maternity">
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -146,6 +161,7 @@
 
     <div class="row" style="height: 50px;"></div>
 
+    <!-- Sellos informativos -->
     <div class="sellos row d-flex flex-wrap gap-3" style="justify-content: center;">
       <div class="col-2 text-center pt-4" data-bs-toggle="collapse" href="#sello1" role="button" aria-expanded="false"
         aria-controls="sello1" style="height: 120px; width: 240px; background-color: #f2c9c3; border-radius: 10px;">
@@ -215,8 +231,9 @@
     <h3 style="margin-top: 20px; margin-bottom: 20px;">Nuestras marcas</h3>
     <div class="marcas row"></div>
 
-    <h3 style="margin-top: 20px; margin-bottom: 20px;">Categorías</h3>
-    <div class="categorias row d-flex flex-wrap text-center" style="justify-content: center;">
+    <!-- Categorías de productos -->
+    <h3 style="margin-top: 20px; margin-bottom: 20px;" class="d-none d-md-block">Categorías</h3>
+    <div class="categorias row d-flex flex-wrap text-center d-none d-md-inline" style="justify-content: center;">
       <div class="col-2 btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapsesuplementos"
         aria-expanded="false" aria-controls="collapsesuplementos">
         <img src="ref/suplementos.jpg" class="figure-img img-fluid rounded-circle" style="width: 120px;">
@@ -249,6 +266,7 @@
       </div>
     </div>
 
+    <!-- Collapse/Carrousel de productos -->
     <div class="collapse" id="collapsesuplementos">
       <div class="card card-body">
         <h3 class="mb-0 mt-3">Productos: Suplementos</h3>
